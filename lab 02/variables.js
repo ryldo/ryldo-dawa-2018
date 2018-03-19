@@ -2,7 +2,7 @@ var http = require('http');
     fs	  = require('fs');
 var  parametros = [];
 valores = [];
-arreglo_parametros = [];
+arreglo_parametros=[];
 
 http.createServer(function(req,res){
 	fs.readFile('./form.html', function(err,html){

@@ -20,7 +20,11 @@ function parse_vars(req){
 	return{
 		parametros:parametros,
 		valores: valores
-	}
+	};
 }
+module.exports.batman ={
+	identidad: 'Bruce Wayne',
+	poder: 'Dinero'
+};
 
 module.exports.parse_vars=parse_vars;
