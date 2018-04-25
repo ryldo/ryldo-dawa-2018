@@ -1,0 +1,5 @@
+1. Aprendimos el uso básico de preprocesadores de html como jade, viendo algunas de sus características y ventajas.
+2. Se aprendió sobre el uso del módulo de ongoose y cómo sus funciones predefinidas nos facilitan la vida al momento de trabajar con MongoDB.
+3. La implelemntación del Crud básico de productos fue de gran ayuda al afianzamiento y conocimiento de más características del entorno Node.js.
+4. Se logró desarrollar los ejercicios propuestos con cierto grado de facilidad debido a la comodidad que ofrece express framework para trabajar con rutas..
+5. Se logró alcanzar los objetivos y metas de la sesión de práctica en su totalidad.

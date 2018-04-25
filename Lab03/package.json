@@ -1,0 +1,14 @@
+{
+  "name": "proyecto_roger_purguaya",
+  "version": "1.0.0",
+  "description": "Lab03 DAWA 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roger Purguaya Lázaro",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}

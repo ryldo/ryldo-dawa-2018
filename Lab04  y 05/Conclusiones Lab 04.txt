@@ -1,0 +1,5 @@
+1. Logramos alcanzar los objetivos planteados en los incisos de la primera parte del documento de la sesión de práctica.
+2. Con la ayuda y orientación del docente logramos despejar algunas duadas que nos atormentaban al momento de trabajar con node.js.
+3. La ayuda de la documentación oficial de node y espress nos fueron de gran ayuda para resolver los ejercicios propuestos.
+4. Muchos de los conocimientos previos sobre javascript fueron de vital importancia para desarrollar el laboratorio con comodidad.
+5. Surgieron algunos inconvenientes al momento de importar algunos módulos con npm, ya que algunos se mostraban en estado deprecated (obsoletos)

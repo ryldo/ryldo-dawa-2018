@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        console.log('------------------------------\n')
+        console.log(' Número mayor:\n')
+         var Numero = function (valor) {
+            this.tamano = valor
+        }
+        var mayor = function (num1, num2) {
+            num1.tamano > num2.tamano ? console.log(`${num1.tamano} es el mayor`) : console.log(`${num2.tamano} es el mayor`) 
+        }
+        
+        var x = {tamano : 3}
+        var y = new Numero(7)
+
+        mayor(x,y) 
+
+        console.log('------------------------------\n')
+        console.log(' Album favorito:\n')
+
+         function albumFavorito() {
+            var album_favorito = function (coleccion) {
+                if (coleccion.length === 0) return
+                   
+                var mas_reproducido = coleccion[0].tocado,
+                    mas_indice = 0
+                
+                for (let i = 0; i < coleccion.length; i++) {
+                    if(coleccion[i].tocado > mas_reproducido){
+                        mas_reproducido = coleccion[i].tocado
+                        mas_indice = i
+                    }
+                }
+                return{
+                    play: mas_reproducido,
+                    index : mas_indice
+                    }
+            }
+            var music = [
+               {cancion: 'Los patitos', tocado: 23},             
+               {cancion: 'Album 2', tocado: 45},         
+               {cancion: 'Album 3', tocado: 67}         
+            ]
+            var fav = album_favorito(music)
+            console.log(`Tu album favorito fue tocado ${fav.play} veces`)
+        }
+        albumFavorito() 
+    
+        console.log('------------------------------\n')
+        console.log(' suma de Variables:\n')
+
+    function sumaVariables () {
+       function Sumar() {
+        return {
+                valor : 0,
+                agregar : function (val) {this.valor += val},
+                obtenerSumaActual: function () {return this.valor}
+                }
+        }
+       
+        var s1 = Sumar() 
+        var s2 = Sumar()
+        
+        s1.agregar(10)
+        s1.agregar(20)
+
+        s2.agregar(30)
+        s2.agregar(5)
+        console.log(s1.obtenerSumaActual())
+        console.log(s2.obtenerSumaActual())
+    }
+
+    sumaVariables() 
+
+    console.log('------------------------------\n')
+    console.log(' Album favorito 2:\n')
+
+     function albumFavorito() {
+        function MusicBox() {
+            return{
+                box : [],
+                addAlbum : function (album) {
+                    this.box.push(album)
+                },
+                favoriteAlbum: function () {
+                    return this.box[0].nombre +' - '+ this.box[0].artista
+                }
+                }
+        }
+
+        function Album(nombre,artista) {
+            return{
+                    nombre: nombre,
+                    artista : artista,
+                    play : function () {
+                        console.log(`Tocando ${this.nombre} de ${this.artista}`)
+                    }
+                 }
+        }
+
+        var box = MusicBox(),
+        a1 = Album('The who', 'Tommy'),
+        a2 = Album('Tom Waits', 'Closing Time'),
+        a3 = Album('Jhon Cale', 'Paris 1919'),
+        favorito
+
+        box.addAlbum(a1)
+        box.addAlbum(a2)
+        box.addAlbum(a3)
+
+        a1.play()
+        a2.play()
+        a3.play()
+
+        favorito = box.favoriteAlbum()
+        console.log(`Tu álbum favorito es ${favorito}`)
+    }
+    albumFavorito() 
+
+    
+    console.log('------------------------------\n')
+    console.log(' Números primos:\n')
+
+    function testPrimo(numero) {
+        if (isNaN(numero)) {return 'Solo se admiten números'}
+        let primos = [1,2,3,5,7]
+        if (primos.includes(numero)) {return 'Si es primo'}
+        let a = 0
+        for (let i = 1; i <= parseInt(Math.pow(numero,0.5)) ; i++) {
+            if (numero % i == 0) { a++ }
+        }
+        return res = a >= 2 ? 'No es primo':'Si es primo'
+    }
+    for (let i = 1; i <= 100 ; i++) {
+        console.log(i+' -> '+testPrimo(i))
+    }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
